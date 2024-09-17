@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="http://localhost:3000/usuarios">CADASTRE-SE</a>
+  </header>
+  <div class="box">
+    <form id="formProduto">
+      <fieldset>
+        <legend><b>Adicione Produtos</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="produto" id="produto" class="inputUser" required>
+          <label for="produto" class="labelInput">Produto</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="quantidade" id="quantidade" class="inputUser" required>
+          <label for="quantidade" class="labelInput">Quantidade</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <label for="descricao" class="labelInput"></label>
+          <textarea name="descricao" id="descricao" cols="70" rows="10" maxlength="300"></textarea>
+        </div>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </div>
+  </form>
+  </div>
+
+  <!-- Seção onde os produtos serão listados -->
+  <div class="produtos-lista">
+    <h2>Lista de Produtos</h2>
+    <ul id="listaProdutos">
+      <!-- Os produtos serão inseridos aqui -->
+    </ul>
+  </div>
+
+</body>
+
+</html>
